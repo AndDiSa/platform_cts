@@ -28,7 +28,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/include $(LOCAL_PATH)/src /usr/include/ \
 	external/tinyalsa/include/ external/tinyxml/ libcore/include
 LOCAL_STATIC_LIBRARIES += libutils liblog libtinyalsa libcutils libtinyxml
 LOCAL_CFLAGS:= -g -fno-exceptions
-LOCAL_LDFLAGS:= -g -lrt -ldl -lm -fno-exceptions
+LOCAL_LDFLAGS:= -g -lrt -ldl -lm -fno-exceptions -lpthread
 LOCAL_MODULE:= libcts_audio_quality
 include $(BUILD_HOST_STATIC_LIBRARY)
 
